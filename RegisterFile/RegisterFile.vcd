@@ -1,0 +1,110 @@
+$date
+	Sun Nov 17 23:50:17 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RegFile_sim $end
+$var wire 32 ! Data2 [31:0] $end
+$var wire 32 " Data1 [31:0] $end
+$var reg 1 # CLK $end
+$var reg 1 $ DBDataSrc $end
+$var reg 6 % Opcode [5:0] $end
+$var reg 1 & RegDst $end
+$var reg 1 ' RegWre $end
+$var reg 32 ( dataFromALU [31:0] $end
+$var reg 32 ) dataFromRW [31:0] $end
+$var reg 11 * im [10:0] $end
+$var reg 5 + rd [4:0] $end
+$var reg 5 , rs [4:0] $end
+$var reg 5 - rt [4:0] $end
+$scope module uut $end
+$var wire 1 # CLK $end
+$var wire 1 $ DBDataSrc $end
+$var wire 32 . Data2 [31:0] $end
+$var wire 6 / Opcode [5:0] $end
+$var wire 1 & RegDst $end
+$var wire 1 ' RegWre $end
+$var wire 32 0 dataFromALU [31:0] $end
+$var wire 32 1 dataFromRW [31:0] $end
+$var wire 11 2 im [10:0] $end
+$var wire 5 3 rd [4:0] $end
+$var wire 5 4 rs [4:0] $end
+$var wire 5 5 rt [4:0] $end
+$var wire 5 6 writeReg [4:0] $end
+$var wire 32 7 writeData [31:0] $end
+$var wire 32 8 Data1 [31:0] $end
+$var integer 32 9 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100000 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+x'
+x&
+bx %
+x$
+0#
+bx "
+bx !
+$end
+#10
+b0 "
+b0 8
+b1 7
+b10 6
+b10 )
+b10 1
+b1 (
+b1 0
+b0 *
+b0 2
+b10 +
+b10 3
+b0 !
+b0 .
+b1 -
+b1 5
+b0 ,
+b0 4
+b0 %
+b0 /
+0$
+1'
+1&
+#15
+1#
+#30
+0#
+#45
+1#
+#60
+0#
+#75
+1#
+#90
+0#
+#105
+1#
+#110

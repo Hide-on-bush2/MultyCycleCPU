@@ -1,0 +1,95 @@
+$date
+	Wed Nov 20 22:08:22 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module IM_sim $end
+$var wire 5 ! rt [4:0] $end
+$var wire 5 " rs [4:0] $end
+$var wire 5 # rd [4:0] $end
+$var wire 6 $ op [5:0] $end
+$var wire 5 % Sa [4:0] $end
+$var wire 16 & Immediate [15:0] $end
+$var reg 32 ' IAddr [31:0] $end
+$var reg 1 ( RW $end
+$scope module uut $end
+$var wire 32 ) IAddr [31:0] $end
+$var wire 4 * PC4 [3:0] $end
+$var wire 1 ( RW $end
+$var wire 5 + rt [4:0] $end
+$var wire 5 , rs [4:0] $end
+$var wire 5 - rd [4:0] $end
+$var wire 6 . op [5:0] $end
+$var wire 5 / Sa [4:0] $end
+$var wire 32 0 JumpPC [31:0] $end
+$var wire 16 1 Immediate [15:0] $end
+$var reg 32 2 IDataOut [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 2
+b0 1
+bz0000000000000000000000000000 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+bz *
+bx )
+x(
+bx '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10000
+b0 '
+b0 )
+0(
+#60000
+b10 $
+b10 .
+b1 !
+b1 +
+b1000 &
+b1000 1
+bz1000000000010000000000001000 0
+b1000000000010000000000001000 2
+1(
+#110000
+b10010 $
+b10010 .
+b10 !
+b10 +
+b10 &
+b10 1
+bz1000000000100000000000000000 0
+b1001000000000100000000000000010 2
+b100 '
+b100 )
+#160000
+b0 $
+b0 .
+b10 "
+b10 ,
+b1 !
+b1 +
+b11 #
+b11 -
+bz0000010000010001100000000000 0
+b1100000000000 &
+b1100000000000 1
+b10000010001100000000000 2
+b1000 '
+b1000 )
+#170000
